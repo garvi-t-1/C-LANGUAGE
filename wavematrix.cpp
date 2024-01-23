@@ -16,12 +16,28 @@ int main()
 				scanf("%d",&a[i][j]);
 			}
 		}
-			printf("elements of matrix are: ");
+			printf("elements of matrix are:\n");
 			for(int i=0;i<n;i++)
-			{
+			{ 
 				for(int j=0;j<n;j++)
 				{
-					printf("%d",a[i][j]);
+					printf("%d\t",a[i][j]);
+				}
+					printf("\n");
+			}
+			for(int i=0;i<n;i++)
+			{ if(i%2==0)
+			{
+					for(int j=0;j<n;j++)
+				{
+					printf("%d\t",a[i][j]);
+				}
+					printf("\n");
+			}
+			}
+				for(int j=0;j<n;j++)
+				{
+					printf("%d\t",a[i][j]);
 				}
 					printf("\n");
 			}
