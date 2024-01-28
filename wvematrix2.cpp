@@ -25,23 +25,25 @@ int main()
 				}
 					printf("\n");
 			}
-			for(int i=0;i<n;i++)
-			{ if(i%2==0)
+			printf("zigzag patter:\n");
+			for(int j=0;j<m;j++)
 			{
-					for(int j=0;j<n;j++)
+				if(j%2==0)
 				{
-					printf("%d\t",a[i][j]);
+					for(int i=n-1;i>=0;i--)
+					{
+						printf("%d\t",a[i][j]);
+					}
 				}
-					
+				else{
+					for(int i=0;i<n;i++)
+					{
+						printf("%d\t",a[i][j]);
+					}
+				}
+				printf("\n");
 			}
-			else
 			
-				for(int j=n-1;j>=0;j--)
-				{
-					printf("%d\t",a[i][j]);
-				}
-					printf("\n");
-			}
 		
 		return 0;
 	
